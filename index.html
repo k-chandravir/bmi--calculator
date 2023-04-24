@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BMI Calculator</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='bmi.css'>
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Body Mass Index</h1>
+        <div class="bmi-form-container">
+            <form>
+                <div class="bmi-calculator">
+                    <div class="labels">
+                        <label>Age</label>
+                        <label>Weight</label>
+                        <label>Height</label>
+                        <label>Gender</label>
+                        <label>BMI</label>
+                        <label>Final Verdict</label>
+                        <!-- <button>Submit</button> -->
+                    </div>
+                    <div class="input-output">
+                        <input type="number" name="age" id="age" max="150" min="0">
+                        <input type="number" name="weight" id="weight" onchange="calculateBMI()" max="200" min="0">
+                        <div class="height-input">
+                            <input type="number" name="height" id="height_in_feets" onchange="calculateBMI()" max="10" min="0">Feets</input>
+                            <input type="number" name="height" id="height_in_inches" onchange="calculateBMI()" max="10" min="0">Inches</input>
+                        </div>
+                        <div class="gender">
+                            <input type="radio" name="gender" id="male">Male
+                            <input type="radio" name="gender" id="female">Female
+                        </div>
+                        <div class="bmi-result" id="bmi-result">
+                            <!-- <span id="bmi-result">0</span> -->0
+                        </div>
+                        <div class="bmi-result" id="final-verdict">See The Results Here</div>
+                    </div>
+                    <img src="weight-measure-image.jpg">
+                </div>
+            </form>
+            
+        </div>
+
+    </div>
+    
+    <script src='bmi.js'></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Oval&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(background.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-family: 'Nova Oval', cursive;
+}
+
+.container{
+    margin-top: 100px;
+}
+
+.title{
+    text-align: center;
+    color: rgb(93, 196, 255);
+}
+
+.bmi-calculator{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: rgba(128, 128, 128, 0.377);
+}
+
+.bmi-calculator img{
+    width: 250px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    /* background-color: yellow; */
+}
+
+.labels label{
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 255, 255, 0.452);
+}
+
+/* button{
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: rgba(186, 247, 18, 0.753);
+} */
+
+.input-output{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    /* background-color: greenyellow; */
+    margin: 5px;
+}
+
+input{
+    width: 50px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255, 0, 0, 0.342);
+}
+
+input:hover{
+    background-color: rgba(233, 8, 8, 0.541);
+}
+
+.bmi-result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 40px;
+    margin: 12px 5px;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    border-bottom: 1.5px solid;
+    border-right: 1.5px solid;
+    background-color: rgba(65, 65, 65, 0.61);
+}
+
+#final-verdict{
+    width: 200px;
+}
